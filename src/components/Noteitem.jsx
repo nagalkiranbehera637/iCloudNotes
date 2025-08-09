@@ -11,7 +11,7 @@ function Noteitem(props) {
     <div className="card">
       <div className="card-body">
         <h5 className="card-title">{props.title}</h5>
-        <p className="card-text">{props.id}</p>
+        <p className="card-text">{props.description}</p>
         <Link to="/" className="btn  mx-1" onClick={()=>{props.updateNote({'id':props.id ,'title':props.title,'description':props.description,'tag':props.tag})}}><i className="ri-edit-box-line "></i></Link>
         <Link to="/" className="btn mx-1 " id={props.id} onClick={()=>{handleDelete(props.id)}}><i className="ri-delete-bin-line"></i></Link>
       </div>
