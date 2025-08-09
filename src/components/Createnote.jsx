@@ -10,7 +10,9 @@ function Createnote() {
      const handleclick=(e)=>{
         e.preventDefault()
         addNote(title,description,tag)
-        
+        settitle("")
+        setdescription("")
+        settag('')
      }
   return (
      <div className='container w-50 d-flex flex-column justify-content-center p-2'>
